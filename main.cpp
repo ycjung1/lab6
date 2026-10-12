@@ -1,4 +1,5 @@
 #include "holiday.h"
+#include <array>
 
 namespace JungYunchae2649114
 {
@@ -28,7 +29,7 @@ int main()
 
     std::array<holiday, n> arr;
     for (int i = 0; i < arr.size(); ++i) //size(), at() 멤버함수 사용
-        arr.at(i) = a[1];//arr[i] = a[i];
+        arr.at(i) = a[i];//arr[i] = a[i];
     for (const auto& arri : arr)
         arri.print();
     return 0;
